@@ -1,0 +1,1847 @@
+; Wed Apr 24 21:04:02 CEST 2013
+; 
+;+ (version "3.4.8")
+;+ (build "Build 629")
+
+([Jess+engine] of  %3AJESS-ENGINE
+)
+
+([prototipo3_Class10001] of  Plato
+
+	(cenaPlato y)
+	(comidaPlato y)
+	(desayunoPlato n)
+	(grasasPlato 21.9)
+	(hidratosPlato 2.1)
+	(kcalPlato 376)
+	(meriendaPlato n)
+	(nombrePlato "boquerones en vinagre")
+	(proteinasPlato 42.8)
+	(tipoPlato segundo))
+
+([prototipo3_Class10002] of  Plato
+
+	(cenaPlato y)
+	(comidaPlato y)
+	(desayunoPlato n)
+	(grasasPlato 30.9)
+	(hidratosPlato 22.6)
+	(ingredientesPlato
+		[prototipo4_Class21575]
+		[prototipo4_Class21601])
+	(kcalPlato 510)
+	(meriendaPlato n)
+	(nombreIngredientesPlato
+		"Aceite de oliva"
+		"Pan blanco")
+	(nombrePlato "calamares a la romana")
+	(proteinasPlato 34.7)
+	(tipoPlato segundo))
+
+([prototipo3_Class10003] of  Plato
+
+	(cenaPlato y)
+	(comidaPlato y)
+	(desayunoPlato n)
+	(grasasPlato 13.3)
+	(hidratosPlato 15.2)
+	(ingredientesPlato
+		[prototipo4_Class21629]
+		[prototipo4_Class21623]
+		[prototipo4_Class21573]
+		[prototipo4_Class21606]
+		[prototipo4_Class21628])
+	(kcalPlato 330)
+	(meriendaPlato n)
+	(nombreIngredientesPlato
+		"Zanahoria"
+		"Ajo"
+		"Aceite de girasol"
+		"Limón"
+		"Tomate")
+	(nombrePlato "calamares rellenos")
+	(proteinasPlato 32.7)
+	(tipoPlato segundo))
+
+([prototipo3_Class10004] of  Plato
+
+	(cenaPlato y)
+	(comidaPlato y)
+	(desayunoPlato n)
+	(grasasPlato 34.0)
+	(hidratosPlato 43.1)
+	(ingredientesPlato
+		[prototipo4_Class21595]
+		[prototipo4_Class21597]
+		[prototipo4_Class21629]
+		[prototipo4_Class21627]
+		[prototipo4_Class21573])
+	(kcalPlato 662)
+	(meriendaPlato n)
+	(nombreIngredientesPlato
+		"Jamón ibérico"
+		"Muslo de pollo"
+		"Zanahoria"
+		"Patata"
+		"Aceite de girasol")
+	(nombrePlato "caldo de cocido casero")
+	(proteinasPlato 40.1)
+	(tipoPlato primero))
+
+([prototipo3_Class10005] of  Plato
+
+	(cenaPlato y)
+	(comidaPlato y)
+	(desayunoPlato n)
+	(grasasPlato 0.03)
+	(hidratosPlato 0.75)
+	(ingredientesPlato
+		[prototipo4_Class21627]
+		[prototipo4_Class21628]
+		[prototipo4_Class21629])
+	(kcalPlato 5)
+	(meriendaPlato n)
+	(nombreIngredientesPlato
+		"Patata"
+		"Tomate"
+		"Zanahoria")
+	(nombrePlato "caldo de verduras")
+	(proteinasPlato 0.28)
+	(tipoPlato primero))
+
+([prototipo3_Class10006] of  Plato
+
+	(cenaPlato y)
+	(comidaPlato y)
+	(desayunoPlato n)
+	(grasasPlato 9.2)
+	(hidratosPlato 15.5)
+	(ingredientesPlato
+		[prototipo4_Class21628]
+		[prototipo4_Class21627]
+		[prototipo4_Class21629])
+	(kcalPlato 162)
+	(meriendaPlato n)
+	(nombreIngredientesPlato
+		"Tomate"
+		"Patata"
+		"Zanahoria")
+	(nombrePlato "gazpacho")
+	(proteinasPlato 2.9)
+	(tipoPlato primero))
+
+([prototipo3_Class10007] of  Plato
+
+	(cenaPlato y)
+	(comidaPlato y)
+	(desayunoPlato n)
+	(grasasPlato 9.2)
+	(hidratosPlato 29.4)
+	(ingredientesPlato
+		[prototipo4_Class21616]
+		[prototipo4_Class21627]
+		[prototipo4_Class21629]
+		[prototipo4_Class21575])
+	(kcalPlato 282)
+	(meriendaPlato n)
+	(nombreIngredientesPlato
+		"Lentejas"
+		"Patata"
+		"Zanahoria"
+		"Aceite de oliva")
+	(nombrePlato "puré de legumbres")
+	(proteinasPlato 14.8)
+	(receta
+		[prototipo4_Class10012]
+		[prototipo4_Class10013]
+		[prototipo4_Class10014]
+		[prototipo4_Class10])
+	(tipoPlato primero))
+
+([prototipo3_Class10008] of  Plato
+
+	(cenaPlato y)
+	(comidaPlato y)
+	(desayunoPlato n)
+	(grasasPlato 1.2)
+	(hidratosPlato 20.7)
+	(ingredientesPlato [prototipo4_Class21580])
+	(kcalPlato 104)
+	(meriendaPlato n)
+	(nombreIngredientesPlato "Arroz")
+	(nombrePlato "sopa de arroz")
+	(proteinasPlato 2.5)
+	(tipoPlato primero))
+
+([prototipo3_Class10009] of  Plato
+
+	(cenaPlato y)
+	(comidaPlato y)
+	(desayunoPlato n)
+	(grasasPlato 1.3)
+	(hidratosPlato 18.0)
+	(ingredientesPlato
+		[prototipo4_Class21597]
+		[prototipo4_Class21582])
+	(kcalPlato 102)
+	(meriendaPlato n)
+	(nombreIngredientesPlato
+		"Muslo de pollo"
+		"Pasta")
+	(nombrePlato "sopa de cocido")
+	(proteinasPlato 4.0)
+	(tipoPlato primero))
+
+([prototipo3_Class10010] of  Plato
+
+	(cenaPlato y)
+	(comidaPlato y)
+	(desayunoPlato n)
+	(grasasPlato 38.8)
+	(hidratosPlato 59.3)
+	(ingredientesPlato
+		[prototipo4_Class21582]
+		[prototipo4_Class21592])
+	(kcalPlato 666)
+	(meriendaPlato n)
+	(nombreIngredientesPlato
+		"Pasta"
+		"Bacon")
+	(nombrePlato "espaguetis a la carbonara")
+	(proteinasPlato 17.9)
+	(tipoPlato primero))
+
+([prototipo3_Class10011] of  Plato
+
+	(cenaPlato y)
+	(comidaPlato y)
+	(desayunoPlato n)
+	(grasasPlato 17.2)
+	(hidratosPlato 73.5)
+	(ingredientesPlato
+		[prototipo4_Class21582]
+		[prototipo4_Class21575]
+		[prototipo4_Class21628])
+	(kcalPlato 521)
+	(meriendaPlato n)
+	(nombreIngredientesPlato
+		"Pasta"
+		"Aceite de oliva"
+		"Tomate")
+	(nombrePlato "espaguetis con tomate")
+	(proteinasPlato 15.1)
+	(receta
+		[prototipo4_Class10008]
+		[prototipo4_Class10009]
+		[prototipo4_Class10007])
+	(tipoPlato primero))
+
+([prototipo3_Class10012] of  Plato
+
+	(cenaPlato y)
+	(comidaPlato y)
+	(desayunoPlato n)
+	(grasasPlato 17.2)
+	(hidratosPlato 73.5)
+	(ingredientesPlato
+		[prototipo4_Class21582]
+		[prototipo4_Class21628]
+		[prototipo4_Class21575])
+	(kcalPlato 521)
+	(meriendaPlato n)
+	(nombreIngredientesPlato
+		"Pasta"
+		"Tomate"
+		"Aceite de oliva")
+	(nombrePlato "macarrones con tomate")
+	(proteinasPlato 15.1)
+	(receta
+		[prototipo4_Class10008]
+		[prototipo4_Class10009]
+		[prototipo4_Class10])
+	(tipoPlato primero))
+
+([prototipo3_Class10013] of  Plato
+
+	(cenaPlato y)
+	(comidaPlato y)
+	(desayunoPlato n)
+	(grasasPlato 32.4)
+	(hidratosPlato 22.8)
+	(ingredientesPlato
+		[prototipo4_Class21623]
+		[prototipo4_Class21611]
+		[prototipo4_Class21573])
+	(kcalPlato 485)
+	(meriendaPlato n)
+	(nombreIngredientesPlato
+		"Ajo"
+		"Huevo de gallina"
+		"Aceite de girasol")
+	(nombrePlato "albóndigas")
+	(proteinasPlato 24.7)
+	(tipoPlato segundo))
+
+([prototipo3_Class10014] of  Plato
+
+	(cenaPlato y)
+	(comidaPlato y)
+	(desayunoPlato n)
+	(grasasPlato 52.2)
+	(hidratosPlato 9.9)
+	(ingredientesPlato [prototipo4_Class21594])
+	(kcalPlato 675)
+	(meriendaPlato n)
+	(nombreIngredientesPlato "Chuleta de ternera")
+	(nombrePlato "escalope de ternera")
+	(proteinasPlato 41.0)
+	(tipoPlato segundo))
+
+([prototipo3_Class10015] of  Plato
+
+	(cenaPlato y)
+	(comidaPlato y)
+	(desayunoPlato n)
+	(grasasPlato 43.4)
+	(hidratosPlato 1.9)
+	(ingredientesPlato [prototipo4_Class21596])
+	(kcalPlato 523)
+	(meriendaPlato n)
+	(nombreIngredientesPlato "Lomo de cerdo")
+	(nombrePlato "filete de cerdo a la plancha")
+	(proteinasPlato 32.8)
+	(tipoPlato segundo))
+
+([prototipo3_Class10016] of  Plato
+
+	(cenaPlato y)
+	(comidaPlato y)
+	(desayunoPlato n)
+	(grasasPlato 21.9)
+	(hidratosPlato 2.1)
+	(ingredientesPlato [prototipo4_Class21594])
+	(kcalPlato 303)
+	(meriendaPlato n)
+	(nombreIngredientesPlato "Chuleta de ternera")
+	(nombrePlato "ternera guisada")
+	(proteinasPlato 42.8)
+	(tipoPlato segundo))
+
+([prototipo3_Class10017] of  Plato
+
+	(cenaPlato y)
+	(comidaPlato y)
+	(desayunoPlato n)
+	(grasasPlato 25.4)
+	(hidratosPlato 1.2)
+	(ingredientesPlato
+		[prototipo4_Class21597]
+		[prototipo4_Class21575]
+		[prototipo4_Class21623])
+	(kcalPlato 362)
+	(meriendaPlato n)
+	(nombreIngredientesPlato
+		"Muslo de pollo"
+		"Aceite de oliva"
+		"Ajo")
+	(nombrePlato "pollo guisado")
+	(proteinasPlato 32.1)
+	(receta
+		[prototipo4_Class14]
+		[prototipo4_Class15]
+		[prototipo4_Class10011])
+	(tipoPlato segundo))
+
+([prototipo3_Class10018] of  Plato
+
+	(cenaPlato y)
+	(comidaPlato y)
+	(desayunoPlato n)
+	(grasasPlato 28.7)
+	(hidratosPlato 18.7)
+	(ingredientesPlato
+		[prototipo4_Class21623]
+		[prototipo4_Class21573])
+	(kcalPlato 431)
+	(meriendaPlato n)
+	(nombreIngredientesPlato
+		"Ajo"
+		"Aceite de girasol")
+	(nombrePlato "bacalao al ajorriero")
+	(proteinasPlato 23.0)
+	(tipoPlato segundo))
+
+([prototipo3_Class10019] of  Plato
+
+	(cenaPlato y)
+	(comidaPlato y)
+	(desayunoPlato n)
+	(grasasPlato 20.1)
+	(hidratosPlato 2.2)
+	(ingredientesPlato
+		[prototipo4_Class21620]
+		[prototipo4_Class21575]
+		[prototipo4_Class21623]
+		[prototipo4_Class21606]
+		[prototipo4_Class21628])
+	(kcalPlato 326)
+	(meriendaPlato n)
+	(nombreIngredientesPlato
+		"Besugo"
+		"Aceite de oliva"
+		"Ajo"
+		"Limón"
+		"Tomate")
+	(nombrePlato "besugo al horno")
+	(proteinasPlato 33.7)
+	(receta
+		[prototipo4_Class13]
+		[prototipo4_Class14]
+		[prototipo4_Class15]
+		[prototipo4_Class16]
+		[prototipo4_Class17])
+	(tipoPlato segundo))
+
+([prototipo3_Class10020] of  Plato
+
+	(cenaPlato y)
+	(comidaPlato y)
+	(desayunoPlato n)
+	(grasasPlato 30.8)
+	(hidratosPlato 27.1)
+	(ingredientesPlato
+		[prototipo4_Class21601]
+		[prototipo4_Class21628]
+		[prototipo4_Class21625]
+		[prototipo4_Class21611])
+	(kcalPlato 430)
+	(meriendaPlato y)
+	(nombreIngredientesPlato
+		"Pan blanco"
+		"Tomate"
+		"Lechuga"
+		"Huevo de gallina")
+	(nombrePlato "sandwich vegetal")
+	(proteinasPlato 9.8)
+	(tipoPlato segundo))
+
+([prototipo3_Class20021] of  Plato
+
+	(cenaPlato y)
+	(comidaPlato y)
+	(desayunoPlato n)
+	(grasasPlato 8.6)
+	(hidratosPlato 17.9)
+	(ingredientesPlato [prototipo4_Class21595])
+	(kcalPlato 224)
+	(meriendaPlato n)
+	(nombreIngredientesPlato "Jamón ibérico")
+	(nombrePlato "guisantes con jamón serrano")
+	(proteinasPlato 14.9)
+	(tipoPlato primero))
+
+([prototipo3_Class20022] of  Plato
+
+	(cenaPlato n)
+	(comidaPlato y)
+	(desayunoPlato n)
+	(grasasPlato 22.2)
+	(hidratosPlato 38.5)
+	(ingredientesPlato [prototipo4_Class21613])
+	(kcalPlato 509)
+	(meriendaPlato n)
+	(nombreIngredientesPlato "Judías blancas")
+	(nombrePlato "judías blancas con almejas")
+	(proteinasPlato 26.7)
+	(tipoPlato primero))
+
+([prototipo3_Class20023] of  Plato
+
+	(cenaPlato n)
+	(comidaPlato y)
+	(desayunoPlato n)
+	(grasasPlato 11.2)
+	(hidratosPlato 36.7)
+	(ingredientesPlato [prototipo4_Class21613])
+	(kcalPlato 377)
+	(meriendaPlato n)
+	(nombreIngredientesPlato "Judías blancas")
+	(nombrePlato "judías blancas con chorizo")
+	(proteinasPlato 22.2)
+	(tipoPlato primero))
+
+([prototipo3_Class20024] of  Plato
+
+	(cenaPlato n)
+	(comidaPlato y)
+	(desayunoPlato n)
+	(grasasPlato 22.9)
+	(hidratosPlato 45.7)
+	(ingredientesPlato [prototipo4_Class21612])
+	(kcalPlato 501)
+	(meriendaPlato n)
+	(nombreIngredientesPlato "Garbanzos")
+	(nombrePlato "potaje de garbanzos con espinacas")
+	(proteinasPlato 20.7)
+	(tipoPlato primero))
+
+([prototipo3_Class20025] of  Plato
+
+	(cenaPlato y)
+	(comidaPlato y)
+	(desayunoPlato n)
+	(grasasPlato 11.2)
+	(hidratosPlato 33.2)
+	(ingredientesPlato
+		[prototipo4_Class21581]
+		[prototipo4_Class21627]
+		[prototipo4_Class21611])
+	(kcalPlato 289)
+	(meriendaPlato n)
+	(nombreIngredientesPlato
+		"Aceite de oliva virgen"
+		"Patata"
+		"Huevo de gallina")
+	(nombrePlato "acelgas rehogadas")
+	(proteinasPlato 10.9)
+	(tipoPlato primero))
+
+([prototipo3_Class30026] of  Plato
+
+	(cenaPlato y)
+	(comidaPlato y)
+	(desayunoPlato n)
+	(grasasPlato 17.1)
+	(hidratosPlato 8.1)
+	(ingredientesPlato
+		[prototipo4_Class21581]
+		[prototipo4_Class21623])
+	(kcalPlato 204)
+	(meriendaPlato n)
+	(nombreIngredientesPlato
+		"Aceite de oliva virgen"
+		"Ajo")
+	(nombrePlato "berenjenas al horno")
+	(proteinasPlato 2.6)
+	(tipoPlato segundo))
+
+([prototipo3_Class30027] of  Plato
+
+	(cenaPlato y)
+	(comidaPlato y)
+	(desayunoPlato n)
+	(grasasPlato 8.7)
+	(hidratosPlato 1.6)
+	(ingredientesPlato
+		[prototipo4_Class21624]
+		[prototipo4_Class21623]
+		[prototipo4_Class21575])
+	(kcalPlato 106)
+	(meriendaPlato n)
+	(nombreIngredientesPlato
+		"Champiñón"
+		"Ajo"
+		"Aceite de oliva")
+	(nombrePlato "champiñones al ajillo")
+	(proteinasPlato 4.5)
+	(receta
+		[prototipo4_Class10005]
+		[prototipo4_Class10006]
+		[prototipo4_Class10007])
+	(tipoPlato segundo))
+
+([prototipo3_Class30028] of  Plato
+
+	(cenaPlato y)
+	(comidaPlato y)
+	(desayunoPlato n)
+	(grasasPlato 16.3)
+	(hidratosPlato 0.35)
+	(ingredientesPlato
+		[prototipo4_Class21611]
+		[prototipo4_Class21575])
+	(kcalPlato 174)
+	(meriendaPlato n)
+	(nombreIngredientesPlato
+		"Huevo de gallina"
+		"Aceite de oliva")
+	(nombrePlato "huevo frito")
+	(proteinasPlato 6.6)
+	(receta
+		[prototipo4_Class10010]
+		[prototipo4_Class10])
+	(tipoPlato segundo))
+
+([prototipo3_Class30029] of  Persona
+
+	(actividadP 4)
+	(edadP 20)
+	(enfermedadP ri%C3%B1%C3%B3n)
+	(estaturaP 170)
+	(grasasP 80)
+	(hidratosP 300)
+	(kcalP 2403)
+	(nombreP "Teresa")
+	(odiaP
+		[prototipo4_Class21607]
+		[prototipo4_Class21605])
+	(pesoP 53)
+	(proteinasP 120)
+	(sexoP f)
+	(vegetarianoP FALSE))
+
+([prototipo3_Class30030] of  Persona
+
+	(actividadP 2)
+	(edadP 21)
+	(estaturaP 165)
+	(grasasP 46)
+	(hidratosP 311)
+	(kcalP 2071)
+	(nombreP "Adrian")
+	(pesoP 55)
+	(proteinasP 104)
+	(sexoP m)
+	(vegetarianoP TRUE))
+
+([prototipo3_Class40029] of  Plato
+
+	(cenaPlato y)
+	(comidaPlato y)
+	(desayunoPlato n)
+	(grasasPlato 18.4)
+	(hidratosPlato 2.7)
+	(ingredientesPlato
+		[prototipo4_Class21611]
+		[prototipo4_Class21628])
+	(kcalPlato 260)
+	(meriendaPlato n)
+	(nombreIngredientesPlato
+		"Huevo de gallina"
+		"Tomate")
+	(nombrePlato "huevos rellenos de atún y tomate")
+	(proteinasPlato 20.7)
+	(tipoPlato segundo))
+
+([prototipo3_Class40030] of  Plato
+
+	(cenaPlato y)
+	(comidaPlato y)
+	(desayunoPlato n)
+	(grasasPlato 14.3)
+	(hidratosPlato 0.35)
+	(ingredientesPlato
+		[prototipo4_Class21611]
+		[prototipo4_Class21595]
+		[prototipo4_Class21575])
+	(kcalPlato 156)
+	(meriendaPlato n)
+	(nombreIngredientesPlato
+		"Huevo de gallina"
+		"Jamón ibérico"
+		"Aceite de oliva")
+	(nombrePlato "tortilla francesa")
+	(proteinasPlato 6.6)
+	(receta
+		[prototipo4_Class10010]
+		[prototipo4_Class10020]
+		[prototipo4_Class10007])
+	(tipoPlato segundo))
+
+([prototipo3_Class40031] of  Plato
+
+	(cenaPlato y)
+	(comidaPlato y)
+	(desayunoPlato n)
+	(grasasPlato 19.2)
+	(hidratosPlato 44.7)
+	(ingredientesPlato
+		[prototipo4_Class21580]
+		[prototipo4_Class21611])
+	(kcalPlato 396)
+	(meriendaPlato n)
+	(nombreIngredientesPlato
+		"Arroz"
+		"Huevo de gallina")
+	(nombrePlato "arroz a la cubana con huevo frito")
+	(proteinasPlato 9.7)
+	(receta
+		[prototipo4_Class0]
+		[prototipo4_Class2])
+	(tipoPlato primero))
+
+([prototipo3_Class40032] of  Plato
+
+	(cenaPlato y)
+	(comidaPlato y)
+	(desayunoPlato n)
+	(grasasPlato 19.0)
+	(hidratosPlato 74.1)
+	(ingredientesPlato [prototipo4_Class21580])
+	(kcalPlato 623)
+	(meriendaPlato n)
+	(nombreIngredientesPlato "Arroz")
+	(nombrePlato "arroz con bacalao")
+	(proteinasPlato 37.2)
+	(tipoPlato primero))
+
+([prototipo3_Class40033] of  Plato
+
+	(cenaPlato y)
+	(comidaPlato y)
+	(desayunoPlato n)
+	(grasasPlato 26.8)
+	(hidratosPlato 56.9)
+	(ingredientesPlato [prototipo4_Class21580])
+	(kcalPlato 522)
+	(meriendaPlato n)
+	(nombreIngredientesPlato "Arroz")
+	(nombrePlato "arroz con bogavante")
+	(proteinasPlato 12.4)
+	(tipoPlato primero))
+
+([prototipo3_Class40034] of  Plato
+
+	(cenaPlato y)
+	(comidaPlato y)
+	(desayunoPlato n)
+	(grasasPlato 12.0)
+	(hidratosPlato 37.8)
+	(ingredientesPlato
+		[prototipo4_Class21580]
+		[prototipo4_Class21573]
+		[prototipo4_Class21575]
+		[prototipo4_Class21623]
+		[prototipo4_Class21624])
+	(kcalPlato 280)
+	(meriendaPlato n)
+	(nombreIngredientesPlato
+		"Arroz"
+		"Aceite de girasol"
+		"Aceite de oliva"
+		"Ajo"
+		"Champiñón")
+	(nombrePlato "arroz con champiñón")
+	(proteinasPlato 4.5)
+	(receta
+		[prototipo4_Class8]
+		[prototipo4_Class9]
+		[prototipo4_Class10]
+		[prototipo4_Class11]
+		[prototipo4_Class12])
+	(tipoPlato primero))
+
+([prototipo3_Class40035] of  Plato
+
+	(cenaPlato y)
+	(comidaPlato y)
+	(desayunoPlato n)
+	(grasasPlato 19.0)
+	(hidratosPlato 8.0)
+	(ingredientesPlato
+		[prototipo4_Class21611]
+		[prototipo4_Class21578]
+		[prototipo4_Class21627]
+		[prototipo4_Class21628]
+		[prototipo4_Class21581])
+	(kcalPlato 249)
+	(meriendaPlato n)
+	(nombreIngredientesPlato
+		"Huevo de gallina"
+		"Aceituna verde sin hueso"
+		"Patata"
+		"Tomate"
+		"Aceite de oliva virgen")
+	(nombrePlato "ensalada campera")
+	(proteinasPlato 10.1)
+	(receta
+		[prototipo4_Class10019]
+		[prototipo4_Class10013]
+		[prototipo4_Class10009]
+		[prototipo4_Class10024]
+		[prototipo4_Class10007])
+	(tipoPlato primero))
+
+([prototipo3_Class40036] of  Plato
+
+	(cenaPlato y)
+	(comidaPlato y)
+	(desayunoPlato n)
+	(grasasPlato 24.6)
+	(hidratosPlato 22.7)
+	(ingredientesPlato [prototipo4_Class21612])
+	(kcalPlato 372)
+	(meriendaPlato n)
+	(nombreIngredientesPlato "Garbanzos")
+	(nombrePlato "ensalada de garbanzo")
+	(proteinasPlato 11.4)
+	(tipoPlato primero))
+
+([prototipo3_Class40037] of  Plato
+
+	(cenaPlato y)
+	(comidaPlato y)
+	(desayunoPlato n)
+	(grasasPlato 14.3)
+	(hidratosPlato 4.6)
+	(ingredientesPlato
+		[prototipo4_Class21625]
+		[prototipo4_Class21628]
+		[prototipo4_Class21611])
+	(kcalPlato 162)
+	(meriendaPlato n)
+	(nombreIngredientesPlato
+		"Lechuga"
+		"Tomate"
+		"Huevo de gallina")
+	(nombrePlato "ensalada mixta")
+	(proteinasPlato 2.0)
+	(tipoPlato primero))
+
+([prototipo3_Class40038] of  Plato
+
+	(cenaPlato n)
+	(comidaPlato n)
+	(desayunoPlato y)
+	(grasasPlato 0.51)
+	(hidratosPlato 6.3)
+	(ingredientesPlato
+		[prototipo4_Class21617]
+		[prototipo4_Class21589])
+	(kcalPlato 53)
+	(meriendaPlato y)
+	(nombreIngredientesPlato
+		"Leche de vaca desnatada"
+		"Café en polvo soluble")
+	(nombrePlato "café con leche desnatada sin azúcar")
+	(proteinasPlato 5.1)
+	(receta
+		[prototipo4_Class10000]
+		[prototipo4_Class10001])
+	(tipoPlato bebida))
+
+([prototipo3_Class40039] of  Plato
+
+	(cenaPlato n)
+	(comidaPlato n)
+	(desayunoPlato y)
+	(grasasPlato 2.3)
+	(hidratosPlato 6.1)
+	(ingredientesPlato
+		[prototipo4_Class21619]
+		[prototipo4_Class21589])
+	(kcalPlato 66)
+	(meriendaPlato y)
+	(nombreIngredientesPlato
+		"Leche de vaca semidesnatada"
+		"Café en polvo soluble")
+	(nombrePlato "café con leche semidesnatada y sin azúcar")
+	(proteinasPlato 4.6)
+	(receta
+		[prototipo4_Class10001]
+		[prototipo4_Class10002])
+	(tipoPlato bebida))
+
+([prototipo3_Class40040] of  Plato
+
+	(cenaPlato n)
+	(comidaPlato n)
+	(desayunoPlato y)
+	(grasasPlato 5.0)
+	(hidratosPlato 6.0)
+	(ingredientesPlato
+		[prototipo4_Class21618]
+		[prototipo4_Class21589])
+	(kcalPlato 88)
+	(meriendaPlato y)
+	(nombreIngredientesPlato
+		"Leche de vaca entera"
+		"Café en polvo soluble")
+	(nombrePlato "café con leche sin azúcar")
+	(proteinasPlato 4.1)
+	(receta
+		[prototipo4_Class10001]
+		[prototipo4_Class10003])
+	(tipoPlato bebida))
+
+([prototipo3_Class40041] of  Plato
+
+	(cenaPlato y)
+	(comidaPlato y)
+	(desayunoPlato n)
+	(grasasPlato 6.7)
+	(hidratosPlato 75.4)
+	(ingredientesPlato
+		[prototipo4_Class21580]
+		[prototipo4_Class21618]
+		[prototipo4_Class21583]
+		[prototipo4_Class21585])
+	(kcalPlato 396)
+	(meriendaPlato y)
+	(nombreIngredientesPlato
+		"Arroz"
+		"Leche de vaca entera"
+		"Azúcar blanco"
+		"Canela")
+	(nombrePlato "arroz con leche")
+	(proteinasPlato 7.9)
+	(receta
+		[prototipo4_Class4]
+		[prototipo4_Class5]
+		[prototipo4_Class6]
+		[prototipo4_Class7])
+	(tipoPlato postre))
+
+([prototipo3_Class40042] of  Plato
+
+	(cenaPlato y)
+	(comidaPlato y)
+	(desayunoPlato n)
+	(grasasPlato 7.1)
+	(hidratosPlato 14.2)
+	(ingredientesPlato
+		[prototipo4_Class21583]
+		[prototipo4_Class21611]
+		[prototipo4_Class21619]
+		[prototipo4_Class21576]
+		[prototipo4_Class21585])
+	(kcalPlato 142)
+	(meriendaPlato y)
+	(nombreIngredientesPlato
+		"Azúcar blanco"
+		"Huevo de gallina"
+		"Leche de vaca semidesnatada"
+		"Mantequilla"
+		"Canela")
+	(nombrePlato "buñuelos de viento")
+	(proteinasPlato 4.0)
+	(tipoPlato postre))
+
+([prototipo3_Class40043] of  Plato
+
+	(cenaPlato n)
+	(comidaPlato n)
+	(desayunoPlato y)
+	(grasasPlato 9.1)
+	(hidratosPlato 28.8)
+	(ingredientesPlato
+		[prototipo4_Class21586]
+		[prototipo4_Class21618])
+	(kcalPlato 230)
+	(meriendaPlato y)
+	(nombreIngredientesPlato
+		"Chocolate en polvo a la taza"
+		"Leche de vaca entera")
+	(nombrePlato "chocolate a la taza")
+	(proteinasPlato 7.5)
+	(receta
+		[prototipo4_Class10003]
+		[prototipo4_Class10021])
+	(tipoPlato bebida))
+
+([prototipo3_Class40044] of  Plato
+
+	(cenaPlato y)
+	(comidaPlato y)
+	(desayunoPlato y)
+	(grasasPlato 39.6)
+	(hidratosPlato 38.9)
+	(ingredientesPlato
+		[prototipo4_Class21601]
+		[prototipo4_Class21618]
+		[prototipo4_Class21583]
+		[prototipo4_Class21611]
+		[prototipo4_Class21575]
+		[prototipo4_Class21585])
+	(kcalPlato 566)
+	(meriendaPlato y)
+	(nombreIngredientesPlato
+		"Pan blanco"
+		"Leche de vaca entera"
+		"Azúcar blanco"
+		"Huevo de gallina"
+		"Aceite de oliva"
+		"Canela")
+	(nombrePlato "torrijas")
+	(proteinasPlato 12.4)
+	(receta
+		[prototipo4_Class10015]
+		[prototipo4_Class10016]
+		[prototipo4_Class10017]
+		[prototipo4_Class7]
+		[prototipo4_Class10007]
+		[prototipo4_Class10019])
+	(tipoPlato postre))
+
+([prototipo3_Class40045] of  Plato
+
+	(cenaPlato y)
+	(comidaPlato y)
+	(desayunoPlato y)
+	(grasasPlato 0.15)
+	(hidratosPlato 18.7)
+	(ingredientesPlato [prototipo4_Class21604])
+	(kcalPlato 78)
+	(meriendaPlato y)
+	(nombreIngredientesPlato "Albaricoque")
+	(nombrePlato "albaricoque")
+	(proteinasPlato 0.6)
+	(receta [prototipo4_Class186])
+	(tipoPlato postre))
+
+([prototipo3_Class40046] of  Plato
+
+	(cenaPlato y)
+	(comidaPlato y)
+	(desayunoPlato y)
+	(grasasPlato 0.15)
+	(hidratosPlato 13.3)
+	(ingredientesPlato [prototipo4_Class21605])
+	(kcalPlato 54)
+	(meriendaPlato y)
+	(nombreIngredientesPlato "Ciruela")
+	(nombrePlato "ciruela")
+	(proteinasPlato 0.75)
+	(receta [prototipo4_Class10620])
+	(tipoPlato postre))
+
+([prototipo3_Class40047] of  Plato
+
+	(cenaPlato y)
+	(comidaPlato y)
+	(desayunoPlato y)
+	(grasasPlato 0.6)
+	(hidratosPlato 13.6)
+	(kcalPlato 62)
+	(meriendaPlato y)
+	(nombrePlato "mandarina")
+	(proteinasPlato 1.05)
+	(tipoPlato postre))
+
+([prototipo3_Class40048] of  Plato
+
+	(cenaPlato y)
+	(comidaPlato y)
+	(desayunoPlato y)
+	(grasasPlato 0.6)
+	(hidratosPlato 25.2)
+	(kcalPlato 108)
+	(meriendaPlato y)
+	(nombrePlato "mango")
+	(proteinasPlato 1.05)
+	(tipoPlato postre))
+
+([prototipo3_Class40049] of  Plato
+
+	(cenaPlato y)
+	(comidaPlato y)
+	(desayunoPlato y)
+	(grasasPlato 0.45)
+	(hidratosPlato 15.6)
+	(kcalPlato 68)
+	(meriendaPlato y)
+	(nombrePlato "manzana")
+	(proteinasPlato 0.3)
+	(tipoPlato postre))
+
+([prototipo3_Class40050] of  Plato
+
+	(cenaPlato y)
+	(comidaPlato y)
+	(desayunoPlato y)
+	(grasasPlato 0.15)
+	(hidratosPlato 10.35)
+	(ingredientesPlato [prototipo4_Class21607])
+	(kcalPlato 45)
+	(meriendaPlato y)
+	(nombreIngredientesPlato "Melocotón")
+	(nombrePlato "melocotón")
+	(proteinasPlato 1.2)
+	(receta [prototipo4_Class1200])
+	(tipoPlato postre))
+
+([prototipo4_Class0] of  Cantidad
+
+	(gramos 100)
+	(ingrediente [prototipo4_Class21580]))
+
+([prototipo4_Class10] of  Cantidad
+
+	(gramos 15)
+	(ingrediente [prototipo4_Class21575]))
+
+([prototipo4_Class10000] of  Cantidad
+
+	(gramos 125)
+	(ingrediente [prototipo4_Class21617]))
+
+([prototipo4_Class10001] of  Cantidad
+
+	(gramos 2)
+	(ingrediente [prototipo4_Class21589]))
+
+([prototipo4_Class10002] of  Cantidad
+
+	(gramos 125)
+	(ingrediente [prototipo4_Class21619]))
+
+([prototipo4_Class10003] of  Cantidad
+
+	(gramos 125)
+	(ingrediente [prototipo4_Class21618]))
+
+([prototipo4_Class10005] of  Cantidad
+
+	(gramos 100)
+	(ingrediente [prototipo4_Class21624]))
+
+([prototipo4_Class10006] of  Cantidad
+
+	(gramos 4)
+	(ingrediente [prototipo4_Class21623]))
+
+([prototipo4_Class10007] of  Cantidad
+
+	(gramos 6)
+	(ingrediente [prototipo4_Class21575]))
+
+([prototipo4_Class10008] of  Cantidad
+
+	(gramos 200)
+	(ingrediente [prototipo4_Class21582]))
+
+([prototipo4_Class10009] of  Cantidad
+
+	(gramos 80)
+	(ingrediente [prototipo4_Class21628]))
+
+([prototipo4_Class10010] of  Cantidad
+
+	(gramos 120)
+	(ingrediente [prototipo4_Class21611]))
+
+([prototipo4_Class10011] of  Cantidad
+
+	(gramos 180)
+	(ingrediente [prototipo4_Class21597]))
+
+([prototipo4_Class10012] of  Cantidad
+
+	(gramos 120)
+	(ingrediente [prototipo4_Class21616]))
+
+([prototipo4_Class10013] of  Cantidad
+
+	(gramos 60)
+	(ingrediente [prototipo4_Class21627]))
+
+([prototipo4_Class10014] of  Cantidad
+
+	(gramos 40)
+	(ingrediente [prototipo4_Class21629]))
+
+([prototipo4_Class10015] of  Cantidad
+
+	(gramos 50)
+	(ingrediente [prototipo4_Class21601]))
+
+([prototipo4_Class10016] of  Cantidad
+
+	(gramos 40)
+	(ingrediente [prototipo4_Class21618]))
+
+([prototipo4_Class10017] of  Cantidad
+
+	(gramos 7)
+	(ingrediente [prototipo4_Class21583]))
+
+([prototipo4_Class10019] of  Cantidad
+
+	(gramos 20)
+	(ingrediente [prototipo4_Class21611]))
+
+([prototipo4_Class10020] of  Cantidad
+
+	(gramos 10)
+	(ingrediente [prototipo4_Class21595]))
+
+([prototipo4_Class10021] of  Cantidad
+
+	(gramos 50)
+	(ingrediente [prototipo4_Class21586]))
+
+([prototipo4_Class10024] of  Cantidad
+
+	(gramos 10)
+	(ingrediente [prototipo4_Class21578]))
+
+([prototipo4_Class10620] of  Cantidad
+
+	(gramos 100)
+	(ingrediente [prototipo4_Class21605]))
+
+([prototipo4_Class11] of  Cantidad
+
+	(gramos 5)
+	(ingrediente [prototipo4_Class21623]))
+
+([prototipo4_Class12] of  Cantidad
+
+	(gramos 75)
+	(ingrediente [prototipo4_Class21624]))
+
+([prototipo4_Class1200] of  Cantidad
+
+	(gramos 100)
+	(ingrediente [prototipo4_Class21607]))
+
+([prototipo4_Class13] of  Cantidad
+
+	(gramos 200)
+	(ingrediente [prototipo4_Class21620]))
+
+([prototipo4_Class14] of  Cantidad
+
+	(gramos 10)
+	(ingrediente [prototipo4_Class21575]))
+
+([prototipo4_Class15] of  Cantidad
+
+	(gramos 1)
+	(ingrediente [prototipo4_Class21623]))
+
+([prototipo4_Class16] of  Cantidad
+
+	(gramos 30)
+	(ingrediente [prototipo4_Class21628]))
+
+([prototipo4_Class17] of  Cantidad
+
+	(gramos 6)
+	(ingrediente [prototipo4_Class21606]))
+
+([prototipo4_Class186] of  Cantidad
+
+	(gramos 100)
+	(ingrediente [prototipo4_Class21604]))
+
+([prototipo4_Class2] of  Cantidad
+
+	(gramos 180)
+	(ingrediente [prototipo4_Class21611]))
+
+([prototipo4_Class20875] of  Alimento
+
+	(calorias 411.0)
+	(grasas 10.0)
+	(hidratos 69.2)
+	(nombre "Galleta salada")
+	(origen vegetal)
+	(prohibido cel%C3%ADacos ri%C3%B1%C3%B3n diabetes coraz%C3%B3n)
+	(proteinas 9.4))
+
+([prototipo4_Class21224] of  Alimento
+
+	(calorias 494.0)
+	(grasas 30.2)
+	(hidratos 44.27)
+	(nombre "Palomitas")
+	(origen vegetal)
+	(prohibido diabetes coraz%C3%B3n)
+	(proteinas 6.2))
+
+([prototipo4_Class21573] of  Alimento
+
+	(calorias 899.0)
+	(grasas 99.9)
+	(hidratos 0.0)
+	(nombre "Aceite de girasol")
+	(origen vegetal)
+	(proteinas 0.0))
+
+([prototipo4_Class21575] of  Alimento
+
+	(calorias 899.0)
+	(grasas 99.9)
+	(hidratos 0.0)
+	(nombre "Aceite de oliva")
+	(origen vegetal)
+	(proteinas 1.0))
+
+([prototipo4_Class21576] of  Alimento
+
+	(calorias 897.0)
+	(grasas 99.5)
+	(hidratos 1.0)
+	(nombre "Mantequilla")
+	(origen animal)
+	(prohibido coraz%C3%B3n)
+	(proteinas 0.25))
+
+([prototipo4_Class21577] of  Alimento
+
+	(calorias 722.0)
+	(grasas 80.0)
+	(hidratos 0.4)
+	(nombre "Margarina")
+	(origen vegetal)
+	(prohibido coraz%C3%B3n)
+	(proteinas 0.2)
+	(recomendado diabetes))
+
+([prototipo4_Class21578] of  Alimento
+
+	(calorias 167.0)
+	(grasas 16.7)
+	(hidratos 1.0)
+	(nombre "Aceituna verde sin hueso")
+	(origen vegetal)
+	(proteinas 0.8))
+
+([prototipo4_Class21579] of  Alimento
+
+	(calorias 517.0)
+	(grasas 32.7)
+	(hidratos 47.45)
+	(nombre "Patatas fritas de bolsa")
+	(origen vegetal)
+	(prohibido diabetes coraz%C3%B3n)
+	(proteinas 6.5))
+
+([prototipo4_Class21580] of  Alimento
+
+	(calorias 364.0)
+	(grasas 0.9)
+	(hidratos 81.6)
+	(nombre "Arroz")
+	(origen vegetal)
+	(proteinas 6.67)
+	(recomendado diabetes))
+
+([prototipo4_Class21581] of  Alimento
+
+	(calorias 899.0)
+	(grasas 99.9)
+	(hidratos 0.0)
+	(nombre "Aceite de oliva virgen")
+	(origen vegetal)
+	(proteinas 1.0))
+
+([prototipo4_Class21582] of  Alimento
+
+	(calorias 359.0)
+	(grasas 1.58)
+	(hidratos 70.9)
+	(nombre "Pasta")
+	(origen animal)
+	(prohibido ri%C3%B1%C3%B3n)
+	(proteinas 12.78)
+	(recomendado diabetes))
+
+([prototipo4_Class21583] of  Alimento
+
+	(calorias 399.0)
+	(grasas 0.0)
+	(hidratos 99.8)
+	(nombre "Azúcar blanco")
+	(origen vegetal)
+	(prohibido diabetes)
+	(proteinas 0.0)
+	(recomendado ri%C3%B1%C3%B3n))
+
+([prototipo4_Class21584] of  Alimento
+
+	(calorias 390.0)
+	(grasas 0.0)
+	(hidratos 97.6)
+	(nombre "Azúcar moreno")
+	(origen vegetal)
+	(prohibido diabetes)
+	(proteinas 0.0)
+	(recomendado ri%C3%B1%C3%B3n))
+
+([prototipo4_Class21585] of  Alimento
+
+	(calorias 255.0)
+	(grasas 3.19)
+	(hidratos 25.55)
+	(nombre "Canela")
+	(origen vegetal)
+	(proteinas 3.89))
+
+([prototipo4_Class21586] of  Alimento
+
+	(calorias 397.0)
+	(grasas 6.0)
+	(hidratos 77.4)
+	(nombre "Chocolate en polvo a la taza")
+	(origen vegetal)
+	(prohibido ri%C3%B1%C3%B3n coraz%C3%B3n)
+	(proteinas 5.5))
+
+([prototipo4_Class21587] of  Alimento
+
+	(calorias 302.0)
+	(grasas 0.0)
+	(hidratos 75.1)
+	(nombre "Miel")
+	(origen vegetal)
+	(proteinas 0.38)
+	(recomendado ri%C3%B1%C3%B3n))
+
+([prototipo4_Class21588] of  Alimento
+
+	(calorias 228.0)
+	(grasas 0.22)
+	(hidratos 42.6)
+	(nombre "Cafe descafeinado en polvo soluble")
+	(origen vegetal)
+	(proteinas 13.9)
+	(recomendado ri%C3%B1%C3%B3n))
+
+([prototipo4_Class21589] of  Alimento
+
+	(calorias 227.0)
+	(grasas 0.5)
+	(hidratos 41.1)
+	(nombre "Café en polvo soluble")
+	(origen vegetal)
+	(prohibido coraz%C3%B3n)
+	(proteinas 14.6)
+	(recomendado ri%C3%B1%C3%B3n))
+
+([prototipo4_Class21590] of  Alimento
+
+	(calorias 220.0)
+	(grasas 2.0)
+	(hidratos 3.0)
+	(nombre "Té")
+	(origen vegetal)
+	(prohibido coraz%C3%B3n)
+	(proteinas 19.6)
+	(recomendado ri%C3%B1%C3%B3n))
+
+([prototipo4_Class21591] of  Alimento
+
+	(calorias 217.0)
+	(grasas 15.97)
+	(hidratos 0.0)
+	(nombre "Ala de pollo")
+	(origen animal)
+	(proteinas 18.33)
+	(recomendado ri%C3%B1%C3%B3n diabetes))
+
+([prototipo4_Class21592] of  Alimento
+
+	(calorias 682.0)
+	(grasas 69.3)
+	(hidratos 0.0)
+	(nombre "Bacon")
+	(origen animal)
+	(proteinas 14.6)
+	(recomendado ri%C3%B1%C3%B3n))
+
+([prototipo4_Class21593] of  Alimento
+
+	(calorias 250.0)
+	(grasas 20.6)
+	(hidratos 0.0)
+	(nombre "Chuleta de cordero")
+	(origen animal)
+	(proteinas 16.18)
+	(recomendado ri%C3%B1%C3%B3n))
+
+([prototipo4_Class21594] of  Alimento
+
+	(calorias 107.0)
+	(grasas 2.62)
+	(hidratos 0.0)
+	(nombre "Chuleta de ternera")
+	(origen animal)
+	(proteinas 20.87)
+	(recomendado ri%C3%B1%C3%B3n))
+
+([prototipo4_Class21595] of  Alimento
+
+	(calorias 375.0)
+	(grasas 22.4)
+	(hidratos 0.1)
+	(nombre "Jamón ibérico")
+	(origen animal)
+	(proteinas 43.2)
+	(recomendado ri%C3%B1%C3%B3n))
+
+([prototipo4_Class21596] of  Alimento
+
+	(calorias 311.0)
+	(grasas 26.6)
+	(hidratos 1.0)
+	(nombre "Lomo de cerdo")
+	(origen animal)
+	(proteinas 16.25)
+	(recomendado ri%C3%B1%C3%B3n))
+
+([prototipo4_Class21597] of  Alimento
+
+	(calorias 183.0)
+	(grasas 11.2)
+	(hidratos 0.0)
+	(nombre "Muslo de pollo")
+	(origen animal)
+	(proteinas 20.62)
+	(recomendado ri%C3%B1%C3%B3n diabetes))
+
+([prototipo4_Class21598] of  Alimento
+
+	(calorias 105.0)
+	(grasas 0.99)
+	(hidratos 1.0)
+	(nombre "Pechuga de pavo")
+	(origen animal)
+	(proteinas 24.12)
+	(recomendado ri%C3%B1%C3%B3n))
+
+([prototipo4_Class21599] of  Alimento
+
+	(calorias 388.0)
+	(grasas 2.5)
+	(hidratos 85.0)
+	(nombre "Cereales de desayuno con base de arroz y chocolate")
+	(origen vegetal)
+	(prohibido cel%C3%ADacos)
+	(proteinas 5.0))
+
+([prototipo4_Class21600] of  Alimento
+
+	(calorias 379.0)
+	(grasas 3.0)
+	(hidratos 80.8)
+	(nombre "Cereales de desayuno variados con miel")
+	(origen vegetal)
+	(prohibido cel%C3%ADacos)
+	(proteinas 5.5))
+
+([prototipo4_Class21601] of  Alimento
+
+	(calorias 261.0)
+	(grasas 1.6)
+	(hidratos 51.5)
+	(nombre "Pan blanco")
+	(origen vegetal)
+	(prohibido cel%C3%ADacos)
+	(proteinas 8.47))
+
+([prototipo4_Class21602] of  Alimento
+
+	(calorias 258.0)
+	(grasas 1.1)
+	(hidratos 50.6)
+	(nombre "Pan blanco tipo baguette")
+	(origen vegetal)
+	(prohibido cel%C3%ADacos)
+	(proteinas 9.65))
+
+([prototipo4_Class21603] of  Alimento
+
+	(calorias 271.0)
+	(grasas 4.7)
+	(hidratos 47.5)
+	(nombre "Pan tipo hamburguesa")
+	(origen vegetal)
+	(prohibido cel%C3%ADacos)
+	(proteinas 7.54))
+
+([prototipo4_Class21604] of  Alimento
+
+	(calorias 41.38)
+	(grasas 0.1)
+	(hidratos 8.54)
+	(nombre "Albaricoque")
+	(origen vegetal)
+	(proteinas 0.88)
+	(recomendado ri%C3%B1%C3%B3n coraz%C3%B3n diabetes))
+
+([prototipo4_Class21605] of  Alimento
+
+	(calorias 48.1)
+	(grasas 0.17)
+	(hidratos 10.2)
+	(nombre "Ciruela")
+	(origen vegetal)
+	(proteinas 0.63)
+	(recomendado diabetes ri%C3%B1%C3%B3n coraz%C3%B3n))
+
+([prototipo4_Class21606] of  Alimento
+
+	(calorias 27.66)
+	(grasas 0.3)
+	(hidratos 3.16)
+	(nombre "Limón")
+	(origen vegetal)
+	(proteinas 0.69)
+	(recomendado diabetes ri%C3%B1%C3%B3n coraz%C3%B3n))
+
+([prototipo4_Class21607] of  Alimento
+
+	(calorias 50.8)
+	(grasas 0.2)
+	(hidratos 10.3)
+	(nombre "Melocotón")
+	(origen vegetal)
+	(proteinas 1.0)
+	(recomendado diabetes coraz%C3%B3n ri%C3%B1%C3%B3n))
+
+([prototipo4_Class21608] of  Alimento
+
+	(calorias 45.48)
+	(grasas 0.2)
+	(hidratos 8.9)
+	(nombre "Naranja")
+	(origen vegetal)
+	(proteinas 0.87)
+	(recomendado ri%C3%B1%C3%B3n coraz%C3%B3n diabetes))
+
+([prototipo4_Class21609] of  Alimento
+
+	(calorias 661.0)
+	(grasas 61.6)
+	(hidratos 10.5)
+	(nombre "Avellana sin cáscara")
+	(origen vegetal)
+	(prohibido diabetes ri%C3%B1%C3%B3n coraz%C3%B3n)
+	(proteinas 12.01))
+
+([prototipo4_Class21610] of  Alimento
+
+	(calorias 603.0)
+	(grasas 51.6)
+	(hidratos 11.6)
+	(nombre "Pistacho")
+	(origen vegetal)
+	(prohibido ri%C3%B1%C3%B3n coraz%C3%B3n diabetes)
+	(proteinas 17.65))
+
+([prototipo4_Class21611] of  Alimento
+
+	(calorias 162.0)
+	(grasas 12.1)
+	(hidratos 0.68)
+	(nombre "Huevo de gallina")
+	(origen animal)
+	(prohibido coraz%C3%B3n)
+	(proteinas 12.68))
+
+([prototipo4_Class21612] of  Alimento
+
+	(calorias 341.0)
+	(grasas 5.5)
+	(hidratos 44.3)
+	(nombre "Garbanzos")
+	(origen vegetal)
+	(prohibido ri%C3%B1%C3%B3n)
+	(proteinas 20.8)
+	(recomendado coraz%C3%B3n diabetes))
+
+([prototipo4_Class21613] of  Alimento
+
+	(calorias 284.0)
+	(grasas 1.6)
+	(hidratos 34.7)
+	(nombre "Judías blancas")
+	(origen vegetal)
+	(prohibido ri%C3%B1%C3%B3n)
+	(proteinas 21.1)
+	(recomendado diabetes coraz%C3%B3n))
+
+([prototipo4_Class21614] of  Alimento
+
+	(calorias 292.0)
+	(grasas 0.83)
+	(hidratos 35.11)
+	(nombre "Judías pintas")
+	(origen vegetal)
+	(prohibido ri%C3%B1%C3%B3n)
+	(proteinas 23.58)
+	(recomendado diabetes coraz%C3%B3n))
+
+([prototipo4_Class21615] of  Alimento
+
+	(calorias 36.42)
+	(grasas 0.58)
+	(hidratos 4.2)
+	(nombre "Judías verdes")
+	(origen vegetal)
+	(prohibido ri%C3%B1%C3%B3n)
+	(proteinas 2.38)
+	(recomendado diabetes coraz%C3%B3n))
+
+([prototipo4_Class21616] of  Alimento
+
+	(calorias 304.0)
+	(grasas 1.7)
+	(hidratos 40.6)
+	(nombre "Lentejas")
+	(origen vegetal)
+	(prohibido ri%C3%B1%C3%B3n)
+	(proteinas 23.18)
+	(recomendado coraz%C3%B3n diabetes))
+
+([prototipo4_Class21617] of  Alimento
+
+	(calorias 37.0)
+	(grasas 0.2)
+	(hidratos 4.9)
+	(nombre "Leche de vaca desnatada")
+	(origen animal)
+	(prohibido cel%C3%ADacos)
+	(proteinas 3.89)
+	(recomendado ri%C3%B1%C3%B3n))
+
+([prototipo4_Class21618] of  Alimento
+
+	(calorias 65.4)
+	(grasas 3.8)
+	(hidratos 4.7)
+	(nombre "Leche de vaca entera")
+	(origen animal)
+	(prohibido cel%C3%ADacos coraz%C3%B3n)
+	(proteinas 3.06)
+	(recomendado ri%C3%B1%C3%B3n))
+
+([prototipo4_Class21619] of  Alimento
+
+	(calorias 47.6)
+	(grasas 1.6)
+	(hidratos 4.8)
+	(nombre "Leche de vaca semidesnatada")
+	(origen animal)
+	(prohibido cel%C3%ADacos coraz%C3%B3n)
+	(proteinas 3.5)
+	(recomendado ri%C3%B1%C3%B3n))
+
+([prototipo4_Class21620] of  Alimento
+
+	(calorias 88.7)
+	(grasas 1.8)
+	(hidratos 0.0)
+	(nombre "Besugo")
+	(origen animal)
+	(proteinas 18.12))
+
+([prototipo4_Class21621] of  Alimento
+
+	(calorias 97.9)
+	(grasas 2.3)
+	(hidratos 0.0)
+	(nombre "Lubina")
+	(prohibido coraz%C3%B3n)
+	(proteinas 19.3))
+
+([prototipo4_Class21622] of  Alimento
+
+	(calorias 63.9)
+	(grasas 1.8)
+	(hidratos 0.0)
+	(nombre "Merluza")
+	(origen animal)
+	(proteinas 11.93))
+
+([prototipo4_Class21623] of  Alimento
+
+	(calorias 119.0)
+	(grasas 0.23)
+	(hidratos 24.3)
+	(nombre "Ajo")
+	(origen vegetal)
+	(proteinas 4.3)
+	(recomendado ri%C3%B1%C3%B3n diabetes))
+
+([prototipo4_Class21624] of  Alimento
+
+	(calorias 33.56)
+	(grasas 1.2)
+	(hidratos 0.54)
+	(nombre "Champiñón")
+	(origen vegetal)
+	(proteinas 4.25)
+	(recomendado coraz%C3%B3n))
+
+([prototipo4_Class21625] of  Alimento
+
+	(calorias 19.6)
+	(grasas 0.6)
+	(hidratos 1.4)
+	(nombre "Lechuga")
+	(origen vegetal)
+	(proteinas 1.37)
+	(recomendado diabetes coraz%C3%B3n))
+
+([prototipo4_Class21626] of  Alimento
+
+	(calorias 31.6)
+	(grasas 0.22)
+	(hidratos 4.66)
+	(nombre "Nabo")
+	(origen vegetal)
+	(proteinas 1.0)
+	(recomendado ri%C3%B1%C3%B3n))
+
+([prototipo4_Class21627] of  Alimento
+
+	(calorias 78.69)
+	(grasas 0.21)
+	(hidratos 16.1)
+	(nombre "Patata")
+	(origen vegetal)
+	(proteinas 2.22)
+	(recomendado diabetes ri%C3%B1%C3%B3n))
+
+([prototipo4_Class21628] of  Alimento
+
+	(calorias 22.17)
+	(grasas 0.21)
+	(hidratos 3.5)
+	(nombre "Tomate")
+	(origen vegetal)
+	(proteinas 0.88)
+	(recomendado coraz%C3%B3n))
+
+([prototipo4_Class21629] of  Alimento
+
+	(calorias 39.4)
+	(grasas 0.2)
+	(hidratos 6.9)
+	(nombre "Zanahoria")
+	(origen vegetal)
+	(proteinas 1.25)
+	(recomendado ri%C3%B1%C3%B3n))
+
+([prototipo4_Class4] of  Cantidad
+
+	(gramos 63)
+	(ingrediente [prototipo4_Class21580]))
+
+([prototipo4_Class5] of  Cantidad
+
+	(gramos 250)
+	(ingrediente [prototipo4_Class21618]))
+
+([prototipo4_Class6] of  Cantidad
+
+	(gramos 50)
+	(ingrediente [prototipo4_Class21583]))
+
+([prototipo4_Class7] of  Cantidad
+
+	(gramos 2)
+	(ingrediente [prototipo4_Class21585]))
+
+([prototipo4_Class8] of  Cantidad
+
+	(gramos 90)
+	(ingrediente [prototipo4_Class21580]))
+
+([prototipo4_Class9] of  Cantidad
+
+	(gramos 8)
+	(ingrediente [prototipo4_Class21573]))

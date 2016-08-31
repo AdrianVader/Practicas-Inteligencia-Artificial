@@ -1,0 +1,364 @@
+%	Grupo 16
+%		Teresa Rodríguez Ferreira
+%		Adrián Rabadán Jurado
+
+%	Uso del programa:
+%	Se pueden introducir frases por si solas:
+%	frase(Trad, [las,casas,son,rojas],[]).
+%	Traduce tanto del inglés al español como del español al inglés, por lo que también podemos introducir:
+%	frase(Trad, [the,beautiful,girls,drink,white,milkshakes],[]).
+%	Para ejecutar el bucle escribimos:
+%	traductor.
+%	[los,niños,beben].	<- Aquí cualquier frase
+%	[].					<- Lista vacía para terminar
+%	Al terminar se imprimirán los nombres (palabras clave) de todas las frases solo si todas están escritas en inglés
+
+
+
+% Diccionario español
+%*********************************************************************
+
+% Hechos que representan el diccionario completo en español, contiene todos los verbos,
+% terminaciones, nombres, morfemas, adjetivos, artículos y preposiciones, junto con
+% toda la información adicional necesaria.
+
+
+verbo_esp(copulativo, es, singular).
+verbo_esp(copulativo, son, plural).
+verbo_esp(intransitivo, est, _).
+verbo_esp(regular, beb, _).
+verbo_esp(regular, com, _).
+
+terminacion_esp(singular, regular, e).
+terminacion_esp(plural, regular, en).
+terminacion_esp(singular, intransitivo, a).
+terminacion_esp(plural, intransitivo, an).
+
+nombre_esp(_, niñ).
+nombre_esp(femenino, manzan).
+nombre_esp(masculino, batid).
+nombre_esp(femenino, cas).
+nombre_esp(masculino, libr).
+nombre_esp(femenino, libreri).
+
+
+morfema_esp(femenino, singular, regular, a).
+morfema_esp(femenino, plural, regular, as).
+morfema_esp(masculino, singular, regular, o).
+morfema_esp(masculino, plural, regular, os).
+morfema_esp(_, singular, irregular, e).	% Estos dos morfemas son especiales, ya que no los podemos usar con nombres.
+morfema_esp(_, plural, irregular, es).	% Se establece irregular para que no se formen nombres con ellos.
+%******************** he cambiado, otra vez ninguno por _ para que no me de problemas al unificar el genero, ya que seguramente irregular sirva para no permitir bonite o batide<-- comprobar !!!!!!!!!!!!!!!!!**********************
+
+
+adjetivo_esp(regular, pequeñ).
+adjetivo_esp(irregular, grand).	% "grand" es irregular ya que su morfema solo puede ser el morfema irregular 'e' o 'es'.
+adjetivo_esp(regular, bonit).
+adjetivo_esp(regular, blanc).
+adjetivo_esp(regular, roj).
+
+articulo_esp(masculino, singular, el).
+articulo_esp(masculino, plural, los).
+articulo_esp(femenino, singular, la).
+articulo_esp(femenino, plural, las).
+articulo_esp(masculino, singular, un).
+articulo_esp(femenino, singular, una).
+
+preposicion_esp(en).
+
+
+
+% Diccionario inglés
+%*********************************************************************
+
+% Hechos que representan el diccionario completo en inglés, contiene todos los verbos,
+% terminaciones, nombres, morfemas, adjetivos, artículos y preposiciones, junto con
+% toda la información adicional necesaria.
+
+
+verbo_ing(copulativo, is).
+verbo_ing(copulativo, are).
+verbo_ing(regular, eat).
+verbo_ing(regular, drink).
+
+terminacion_ing(singular, s). % Solo existe una terminación, para la 3ª persona del singular.
+
+nombre_ing(boy).
+nombre_ing(girl).
+nombre_ing(apple).
+nombre_ing(milkshake).
+nombre_ing(house).
+nombre_ing(book).
+nombre_ing(bookcase).
+
+morfema_ing(plural, s).
+
+adjetivo_ing(little).
+adjetivo_ing(big).
+adjetivo_ing(beautiful).
+adjetivo_ing(white).
+adjetivo_ing(red).
+
+articulo_ing(_, the).
+articulo_ing(singular, a).
+
+preposicion_ing(in).
+
+
+
+% Traducción
+%*********************************************************************
+
+% Hechos que representan la traducción de las raíces de las palabras inglesas y españolas.
+% En algunos casos (como es o son) la traducción es directa.
+
+trad_verbo(is, es, singular).
+trad_verbo(are, son, plural).
+trad_verbo(is, est, singular).
+trad_verbo(are, est, plural).
+trad_verbo(eat, com, _).
+trad_verbo(drink, beb, _).
+
+trad_nombre(boy, niñ, masculino).
+trad_nombre(girl, niñ, femenino).
+trad_nombre(apple, manzan, _).
+trad_nombre(milkshake, batid, _).
+trad_nombre(house, cas, _).
+trad_nombre(book, libr, _).
+trad_nombre(bookcase, libreri, _).
+
+trad_adjetivo(little, pequeñ).
+trad_adjetivo(big, grand).
+trad_adjetivo(beautiful, bonit).
+trad_adjetivo(white, blanc).
+trad_adjetivo(red, roj).
+
+trad_articulo(the, el, masculino, singular).
+trad_articulo(the, la, femenino, singular).
+trad_articulo(the, los, masculino, plural).
+trad_articulo(the, las, femenino, plural).
+trad_articulo(a, un, masculino, singular).
+trad_articulo(a, una, femenino, singular).
+
+trad_preposicion(in, en).
+
+
+
+% Traductor de palabras enteras español-inglés
+%*********************************************************************
+
+% Reglas que traducen palabras enteras de español a inglés (la raíz, que traducimos
+% automáticamente con los hechos, y un morfema o terminación si es necesario). Guardamos
+% información como el número (singular, plural), el género (masculino, femenino) y el tipo
+% (regular, copulativo, intransitivo) para después controlar la concordancia entre todas las
+% palabras de una frase.
+
+
+% VERBOS
+	% copulativo
+traductor_verbo_esp(Trad,Num,Tipo) --> [P],{name(P,Lista),verbo_esp(Tipo,Verb, Num),name(Verb,Lista),trad_verbo(Trad,Verb,Num), Tipo=copulativo}.
+	% regular o intransitivo (plural)
+traductor_verbo_esp(Trad,_,Tipo) --> [P],{name(P,Lista),verbo_esp(Tipo,Verb,_),name(Verb,Lista1),terminacion_esp(plural,Tipo,Term),name(Term,Lista2),concatenar(Lista1,Lista2,Lista),trad_verbo(Trad,Verb,plural)}.
+	% regular (singular)
+traductor_verbo_esp(Trad,_,Tipo) --> [P],{name(P,Lista),verbo_esp(Tipo,Verb,_),name(Verb,Lista1),terminacion_esp(singular,Tipo,Term),name(Term,Lista2),concatenar(Lista1,Lista2,Lista),trad_verbo(Trad1,Verb,singular),name(Trad1,ListaTrad1),terminacion_ing(singular,Termin),name(Termin,ListaTrad2),concatenar(ListaTrad1,ListaTrad2,ListaTrad),name(Trad,ListaTrad), Tipo\=intransitivo}.
+	% intransitivo (singular)
+traductor_verbo_esp(Trad,_,Tipo) --> [P],{name(P,Lista),verbo_esp(Tipo,Verb,_),name(Verb,Lista1),terminacion_esp(singular,Tipo,Term),name(Term,Lista2),concatenar(Lista1,Lista2,Lista),trad_verbo(Trad,Verb,singular), Tipo=intransitivo}.
+
+
+% NOMBRES
+traductor_nombre_esp(Trad,Gen,Num) --> [P],{name(P,Lista), nombre_esp(Gen,Nombre),name(Nombre,Lista1),morfema_esp(Gen,Num,Reg,MorfEsp),name(MorfEsp,Lista2),concatenar(Lista1,Lista2,Lista),trad_nombre(Trad1,Nombre,Gen),(Num=plural,name(Trad1,ListaTrad1),morfema_ing(Num,MorfIng),name(MorfIng,ListaTrad2),concatenar(ListaTrad1,ListaTrad2,ListaTrad),name(Trad,ListaTrad);Num=singular,Trad1=Trad),Reg=regular}.
+
+% ADJETIVOS
+traductor_adjetivo_esp(Trad,Gen,Num) --> [P],{name(P,Lista),adjetivo_esp(Reg,Adjetivo),name(Adjetivo,Lista1),morfema_esp(Gen,Num,Reg,MorfEsp),name(MorfEsp,Lista2),concatenar(Lista1,Lista2,Lista),trad_adjetivo(Trad,Adjetivo)}.
+
+% ARTICULOS
+traductor_articulo_esp(Trad,Gen,Num) --> [P],{name(P,Lista),articulo_esp(Gen,Num,Articulo),name(Articulo,Lista),trad_articulo(Trad,Articulo,Gen,Num)}.
+
+% PREPOSICIONES
+traductor_preposicion_esp(Trad) --> [P],{name(P,Lista),preposicion_esp(Prep),name(Prep,Lista),trad_preposicion(Trad,Prep)}.
+
+
+
+% Traductor de palabras enteras inglés-español
+%*********************************************************************
+
+% Reglas que traducen palabras enteras de inglés a español (la raíz, que traducimos
+% automáticamente con los hechos, y un morfema o terminación si es necesario). Guardamos
+% información como el número (singular, plural), el género (masculino, femenino) y el tipo
+% (regular, copulativo, intransitivo) para después controlar la concordancia entre todas las
+% palabras de una frase.
+
+
+% VERBOS
+	% regular
+traductor_verbo_ing(Trad,Num,Tipo) --> [P],{name(P,Lista),verbo_ing(Tipo,Verb),(Num=singular,name(Verb,Lista1),terminacion_ing(Num,TermIng),name(TermIng,Lista2),concatenar(Lista1,Lista2,Lista);Num=plural,name(Verb,Lista)),trad_verbo(Verb,Trad1,Num),verbo_esp(Reg,Trad1,Num),terminacion_esp(Num,Reg,Trad2),name(Trad1,ListaTrad1),name(Trad2,ListaTrad2),concatenar(ListaTrad1,ListaTrad2,ListaTrad),name(Trad,ListaTrad),Tipo=regular}.
+	% intransitivo o copulativo
+traductor_verbo_ing(Trad,Num,Tipo) --> [P],{name(P,Lista),verbo_ing(copulativo,Verb),name(Verb,Lista),trad_verbo(Verb,Trad1,Num),(verbo_esp(Tipo,Trad1,Num),terminacion_esp(Num,Tipo,Trad2),name(Trad1,ListaTrad1),name(Trad2,ListaTrad2),concatenar(ListaTrad1,ListaTrad2,ListaTrad),name(Trad,ListaTrad),Tipo=intransitivo;verbo_esp(copulativo,Trad1,Num),Trad1=Trad)}.
+
+
+% NOMBRES
+traductor_nombre_ing(Trad,Gen,Num) --> [P],{name(P,Lista),nombre_ing(Nombre),(Num=plural,name(Nombre,Lista1),morfema_ing(Num,MorfIng),name(MorfIng,Lista2),concatenar(Lista1,Lista2,Lista);Num=singular,name(Nombre,Lista)),trad_nombre(Nombre,Trad1,Gen),nombre_esp(Gen,Trad1),morfema_esp(Gen,Num,Reg,Trad2),name(Trad1,ListaTrad1),name(Trad2,ListaTrad2),concatenar(ListaTrad1,ListaTrad2,ListaTrad),name(Trad,ListaTrad),Reg=regular}.
+
+% ADJETIVOS
+traductor_adjetivo_ing(Trad,Gen,Num) --> [P],{name(P,Lista),adjetivo_ing(Adjetivo),name(Adjetivo,Lista),trad_adjetivo(Adjetivo,AdjTrad),adjetivo_esp(Reg,AdjTrad),morfema_esp(Gen,Num,Reg,TermTrad), name(AdjTrad,Lista1),name(TermTrad,Lista2),concatenar(Lista1,Lista2,ListaTrad),name(Trad,ListaTrad)}.
+
+% ARTICULOS
+traductor_articulo_ing(Trad,Gen,Num) --> [P],{name(P,Lista),articulo_ing(Num,Articulo),name(Articulo,Lista),trad_articulo(Articulo,Trad,Gen,Num)}.
+
+% PREPOSICIONES
+traductor_preposicion_ing(Trad) --> [P],{preposicion_ing(P),trad_preposicion(P,Trad)}.
+
+
+
+% Analizador de frases en español
+%*********************************************************************
+
+% Reglas que supervisan la formación de grupos nominales y verbales en español, para luego traducirlos
+% a inglés. Se controla que las palabras estén en el orden adecuado (teniendo en cuenta que el orden no es
+% el mismo en español y en inglés) y que no se construyen frases incorrectas.
+% Consideramos distintos casos particulares en los que los verbos tengan que ser de cierto tipo.
+
+
+% GRUPOS NOMINALES
+% Nombre
+grupo_nominal_esp([Trad],Gen,Num) --> traductor_nombre_esp(Trad,Gen,Num).
+
+% Adjetivo
+grupo_nominal_adj_esp([Trad],Gen,Num) --> traductor_adjetivo_esp(Trad,Gen,Num).
+
+% Artículo + nombre
+grupo_nominal_esp([Trad1,Trad2],Gen,Num) --> traductor_articulo_esp(Trad1,Gen,Num), traductor_nombre_esp(Trad2,Gen,Num).
+
+% Nombre + adjetivo
+grupo_nominal_na_esp([Trad1,Trad2],Gen,Num) --> traductor_nombre_esp(Trad2,Gen,Num), traductor_adjetivo_esp(Trad1,Gen,Num).
+
+% Artículo + nombre + adjetivo
+grupo_nominal_esp([Trad1,Trad3,Trad2],Gen,Num) --> traductor_articulo_esp(Trad1,Gen,Num), traductor_nombre_esp(Trad2,Gen,Num),traductor_adjetivo_esp(Trad3,Gen,Num). % Tenemos en cuenta el orden de la frase en ingés, adjetivo, nombre, no como el español, nombre, adjetivo.
+
+
+% GRUPOS VERBALES
+% Verbo
+grupo_verbal_esp([Trad],Num) --> traductor_verbo_esp(Trad,Num,Tipo),{Tipo=regular}.
+
+% Verbo + grupo nominal
+grupo_verbal_esp([Trad1|Trad2],Num) --> traductor_verbo_esp(Trad1,Num,_), grupo_nominal_esp(Trad2,_,_).
+
+% Verbo + nombre + adjetivo
+grupo_verbal_esp([Trad1|Trad2],Num) --> traductor_verbo_esp(Trad1,Num,_), grupo_nominal_na_esp(Trad2,_,_).
+
+% Verbo + adjetivo
+grupo_verbal_adj_esp([Trad1|Trad2],Num,Gen) --> traductor_verbo_esp(Trad1,Num,copulativo), grupo_nominal_adj_esp(Trad2,Gen,Num).
+
+% Verbo + preposición + grupo nominal
+grupo_verbal_esp(Trad,Num) --> traductor_verbo_esp(Trad1,Num,Tipo), traductor_preposicion_esp(Trad2), grupo_nominal_esp(Trad3,_,_),{concatenar([Trad1], [Trad2], Trad4),concatenar(Trad4,Trad3,Trad), Tipo\=copulativo}.
+
+% Verbo + preposición + nombre + adjetivo
+grupo_verbal_esp(Trad,Num) --> traductor_verbo_esp(Trad1,Num,Tipo), traductor_preposicion_esp(Trad2), grupo_nominal_na_esp(Trad3,_,_),{concatenar([Trad1], [Trad2], Trad4),concatenar(Trad4,Trad3,Trad), Tipo\=copulativo}.
+
+
+% FRASES
+% Grupo nominal
+frase(Trad) --> grupo_nominal_esp(Trad,_,_).
+
+% Grupo nominal + grupo verbal
+frase(Trad) --> grupo_nominal_esp(Trad1,_,Num), grupo_verbal_esp(Trad2,Num),{concatenar(Trad1,Trad2,Trad)}.
+
+% Grupo nominal + verbo + adjetivo
+frase(Trad) --> grupo_nominal_esp(Trad1,Gen,Num), grupo_verbal_adj_esp(Trad2,Num, Gen),{concatenar(Trad1,Trad2,Trad)}.
+
+
+
+% Analizador de frases en inglés
+%*********************************************************************
+
+% Reglas que supervisan la formación de grupos nominales y verbales en inglés, para luego traducirlos
+% a español. Se controla que las palabras estén en el orden adecuado (teniendo en cuenta que el orden no es
+% el mismo en español y en inglés) y que no se construyen frases incorrectas.
+% Consideramos distintos casos particulares en los que los verbos tengan que ser de cierto tipo.
+
+% GRUPOS NOMINALES
+% Nombre
+grupo_nominal_ing([Trad],Gen,Num) --> traductor_nombre_ing(Trad,Gen,Num).
+
+% Adjetivo
+grupo_nominal_adj1_ing([Trad],Gen,Num) --> traductor_adjetivo_ing(Trad,Gen,Num).
+
+% Adjetivo + nombre
+grupo_nominal_adj_ing([Trad2,Trad1],Gen,Num) --> traductor_adjetivo_ing(Trad1,Gen,Num),traductor_nombre_ing(Trad2,Gen,Num).
+
+% Articulo + nombre
+grupo_nominal_ing([Trad1,Trad2],Gen,Num) --> traductor_articulo_ing(Trad1,Gen,Num), traductor_nombre_ing(Trad2,Gen,Num).
+
+% Artículo + adjetivo + nombre
+grupo_nominal_ing([Trad1,Trad3,Trad2],Gen,Num) --> traductor_articulo_ing(Trad1,Gen,Num),traductor_adjetivo_ing(Trad2,Gen,Num), traductor_nombre_ing(Trad3,Gen,Num). % Tenemos en cuenta el orden de la frase en ingés, adjetivo, nombre, no como el español, nombre, adjetivo.
+
+
+% GRUPOS VERBALES
+% Verbo
+grupo_verbal_ing([Trad],_,Num) --> traductor_verbo_ing(Trad,Num,Tipo),{Tipo\=copulativo,Tipo\=intransitivo}.
+
+% Verbo + grupo nominal
+grupo_verbal_ing([Trad1|Trad2],Gen,Num) --> traductor_verbo_ing(Trad1,Num,Tipo), grupo_nominal_ing(Trad2,Gen,_),{Tipo=regular;Tipo=copulativo}.
+
+% Verbo + adjetivo + nombre
+grupo_verbal_ing([Trad1|Trad2],Gen,Num) --> traductor_verbo_ing(Trad1,Num,Tipo), grupo_nominal_adj_ing(Trad2,Gen,_),{Tipo=copulativo;Tipo=regular}.
+
+% Verbo + adjetivo
+grupo_verbal_adj_ing([Trad1|Trad2],Gen,Num) --> traductor_verbo_ing(Trad1,Num,Tipo), grupo_nominal_adj1_ing(Trad2,Gen,Num),{Tipo=copulativo}.
+
+% Verbo + preposición + grupo nominal
+grupo_verbal_ing(Trad,Gen,Num) --> traductor_verbo_ing(Trad1,Num,Tipo), traductor_preposicion_ing(Trad2), grupo_nominal_ing(Trad3,Gen,_),{concatenar([Trad1], [Trad2], Trad4),concatenar(Trad4,Trad3,Trad),Tipo\=copulativo}.
+grupo_verbal_ing(Trad,Gen,Num) --> traductor_verbo_ing(Trad1,Num,_), traductor_preposicion_ing(Trad2), grupo_nominal_adj_ing(Trad3,Gen,_),{concatenar([Trad1], [Trad2], Trad4),concatenar(Trad4,Trad3,Trad)}.
+
+
+
+% FRASES
+% Grupo nominal
+frase(Trad) --> grupo_nominal_ing(Trad,_,_).
+
+% Grupo nominal + grupo verbal
+frase(Trad) --> grupo_nominal_ing(Trad1,_,Num), grupo_verbal_ing(Trad2,_,Num),{concatenar(Trad1,Trad2,Trad)}.
+
+% Grupo nominal + verbo(copulativo) + adjetivo
+frase(Trad) --> grupo_nominal_ing(Trad1,Gen,Num), grupo_verbal_adj_ing(Trad2,Gen,Num),{concatenar(Trad1,Trad2,Trad)}.
+
+
+	
+% Auxiliar
+%*********************************************************************
+
+% Funciones auxiliares que empleamos
+
+% Concatena listas
+concatenar([],L,L).
+concatenar([X|L1],L2,[X|L3]):-concatenar(L1,L2,L3).
+
+% Divide la lista en el primer elemento y el resto de elementos
+primero(Lista, Primero, Resto):-[Lista|Y] = [[Primero|Z]],Resto = Z.
+
+
+
+% Opcional
+%*********************************************************************
+
+% La parte opcional se encarga de almacenar los nombres de cada frase, y cuando termina el programa (cuando introducimos
+% una frase vacía) nos devuelve todos los nombres usados en todas las frases.
+% Lo hemos implementado de manera que solo funcione la parte opcional si todas las frases han sido escritas en inglés.
+
+frase(_) --> [F],{F=[]}.
+
+traductor:- traductor([]).
+traductor(Nombres) :-
+	read(Frase),
+	(Frase=[],write(Nombres),nl;
+	frase(Traduccion,Frase,[]),
+	write(Traduccion),
+	nl,
+	selecciona_nombres(Frase,Nomb),
+	concatenar(Nomb,Nombres,ListaNomb),
+	Frase\=[],
+	traductor(ListaNomb)). % <- Repetimos.
+
+selecciona_nombres(Frase,Nombres):-
+	(Frase=[],Nombres=[];primero(Frase,Palabra,Resto),((nombre_ing(Palabra),concatenar([Palabra],Concat,Nombres);nombre_ing(P),morfema_ing(_,T),name(P,Lista1),name(T,Lista2),concatenar(Lista1,Lista2,Lista),name(Palabra,Lista),concatenar([P],Concat,Nombres));Concat=Nombres),selecciona_nombres(Resto,Concat)).
+

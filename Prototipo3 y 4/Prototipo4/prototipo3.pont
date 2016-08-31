@@ -1,0 +1,919 @@
+; Wed Apr 24 21:04:02 CEST 2013
+; 
+;+ (version "3.4.8")
+;+ (build "Build 629")
+
+
+(defclass %3ACLIPS_TOP_LEVEL_SLOT_CLASS "Fake class to save top-level slot information"
+	(is-a USER)
+	(role abstract)
+	(single-slot usadoDesayuno
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+		(default FALSE)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot nombrePlatoC
+		(type STRING)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot origen
+		(type SYMBOL)
+		(allowed-values animal vegetal)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot proteinasPlatoC
+		(type FLOAT)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot ingrediente
+		(type INSTANCE)
+;+		(allowed-classes Alimento)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot cenaPlatoC
+		(type SYMBOL)
+		(allowed-values y n)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot hidratosPlato
+		(type FLOAT)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot recomendado
+		(type SYMBOL)
+		(allowed-values ri%C3%B1%C3%B3n coraz%C3%B3n diabetes cel%C3%ADacos)
+		(create-accessor read-write))
+	(multislot ingredientesPlato
+		(type INSTANCE)
+;+		(allowed-classes Alimento)
+		(create-accessor read-write))
+	(single-slot personaComida
+		(type STRING)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot primeroMerienda
+		(type INSTANCE)
+;+		(allowed-classes Plato)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot desayunoPlato
+		(type SYMBOL)
+		(allowed-values y n)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot proteinasPlato
+		(type FLOAT)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot ce2
+		(type INSTANCE)
+;+		(allowed-classes Plato)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot ce3
+		(type INSTANCE)
+;+		(allowed-classes Plato)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot ce1
+		(type INSTANCE)
+;+		(allowed-classes Plato)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot hidratosPlatoC
+		(type FLOAT)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot hidratosP
+		(type INTEGER)
+		(default 0)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot desayunoDia
+		(type INSTANCE)
+;+		(allowed-classes Desayuno)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot cenaPlato
+		(type SYMBOL)
+		(allowed-values y n)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot segundoCena
+		(type INSTANCE)
+;+		(allowed-classes Plato)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot nombreSegundoComida
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot enfermedadP
+		(type SYMBOL)
+		(allowed-values ri%C3%B1%C3%B3n coraz%C3%B3n diabetes cel%C3%ADacos)
+		(create-accessor read-write))
+	(single-slot %3ADEFINITION-NAME
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot comidaDia
+		(type INSTANCE)
+;+		(allowed-classes Comida)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot nombrePostreCena
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot tipoPlato
+		(type SYMBOL)
+		(allowed-values primero segundo extra bebida postre)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot usadoMerienda
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+		(default FALSE)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot caloriasPlat
+		(type FLOAT)
+		(range 0.0 %3FVARIABLE)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot personaDesayuno
+		(type STRING)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot grasasP
+		(type INTEGER)
+		(default 0)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot kcalPlatoC
+		(type INTEGER)
+		(default 0)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot m1
+		(type INSTANCE)
+;+		(allowed-classes Plato)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot %3ASTARTUP-FILE
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot meriendaPlatoC
+		(type SYMBOL)
+		(allowed-values y n)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot nombrePostreComida
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot edadP
+		(type INTEGER)
+		(range 18 30)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot grasasPlat
+		(type FLOAT)
+		(range 0.0 %3FVARIABLE)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot primeroCena
+		(type INSTANCE)
+;+		(allowed-classes Plato)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot primeroComida
+		(type INSTANCE)
+;+		(allowed-classes Plato)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(multislot prohibido
+		(type SYMBOL)
+		(allowed-values ri%C3%B1%C3%B3n coraz%C3%B3n diabetes cel%C3%ADacos)
+		(create-accessor read-write))
+	(single-slot des2
+		(type INSTANCE)
+;+		(allowed-classes Plato)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot des1
+		(type INSTANCE)
+;+		(allowed-classes Plato)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot nombrePrimeroCena
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot co1
+		(type INSTANCE)
+;+		(allowed-classes Plato)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot merienda
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot proteinasP
+		(type INTEGER)
+		(default 0)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot nombre
+		(type STRING)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot plato
+		(type SYMBOL)
+		(allowed-values primero segundo postre)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot co2
+		(type INSTANCE)
+;+		(allowed-classes Plato)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot co3
+		(type INSTANCE)
+;+		(allowed-classes Plato)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot odiaP
+		(type INSTANCE)
+;+		(allowed-classes Alimento)
+		(create-accessor read-write))
+	(single-slot desayunoPlatoC
+		(type SYMBOL)
+		(allowed-values y n)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot nombreP
+		(type STRING)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot kcalP
+		(type INTEGER)
+		(default 0)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot vegetarianoP
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+		(default FALSE)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot proteinas
+		(type FLOAT)
+		(range 0.0 %3FVARIABLE)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot nombreIngredientesPlato
+		(type STRING)
+		(create-accessor read-write))
+	(single-slot comidaPlatoC
+		(type SYMBOL)
+		(allowed-values y n)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot hidratosPlat
+		(type FLOAT)
+		(range 0.0 %3FVARIABLE)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot usadoCena
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+		(default FALSE)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot segundoDesayuno
+		(type INSTANCE)
+;+		(allowed-classes Plato)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot nombrePrimeroDesayuno
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot meriendaDia
+		(type INSTANCE)
+;+		(allowed-classes Merienda)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot grasasPlatoC
+		(type FLOAT)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot usadoComida
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+		(default FALSE)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot receta
+		(type INSTANCE)
+;+		(allowed-classes Cantidad)
+		(create-accessor read-write))
+	(single-slot personaCena
+		(type STRING)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot sexoP
+		(type SYMBOL)
+		(allowed-values f m)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot calorias
+		(type FLOAT)
+		(range 0.0 %3FVARIABLE)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot gramos
+		(type INTEGER)
+		(range 1 %3FVARIABLE)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot actividadP
+		(type INTEGER)
+		(range 1 5)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot %3AKB-SAVE
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+		(default FALSE)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot grasasPlato
+		(type FLOAT)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot nombrePrimeroComida
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot nombreSegundoDesayuno
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot pesoP
+		(type INTEGER)
+		(range 40 200)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot meriendaPlato
+		(type SYMBOL)
+		(allowed-values y n)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(multislot ingredientes
+		(type INSTANCE)
+;+		(allowed-classes)
+		(cardinality 1 ?VARIABLE)
+		(create-accessor read-write))
+	(single-slot postreComida
+		(type INSTANCE)
+;+		(allowed-classes Plato)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot hidratos
+		(type FLOAT)
+		(range 0.0 %3FVARIABLE)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot nombrePrimeroMerienda
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot nombreSegundoCena
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot %3ASTARTUP-EXPRESSION
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot estaturaP
+		(type INTEGER)
+		(range 140 250)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot segundoComida
+		(type INSTANCE)
+;+		(allowed-classes Plato)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot personaDia
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot comidaPlato
+		(type SYMBOL)
+		(allowed-values y n)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot %3ADEFINITION
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot kcalPlato
+		(type INTEGER)
+		(default 0)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot personaMerienda
+		(type STRING)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot primeroDesayuno
+		(type INSTANCE)
+;+		(allowed-classes Plato)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot cenaDia
+		(type INSTANCE)
+;+		(allowed-classes Cena)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot grasas
+		(type FLOAT)
+		(range 0.0 %3FVARIABLE)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot ingredientesPlatoC
+		(type INSTANCE)
+;+		(allowed-classes Alimento)
+		(create-accessor read-write))
+	(single-slot postreCena
+		(type INSTANCE)
+;+		(allowed-classes Plato)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot nombrePlato
+		(type STRING)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot nombrePlat
+		(type STRING)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot proteinasPlat
+		(type FLOAT)
+		(range 0.0 %3FVARIABLE)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass %3AJESS-ENGINE
+	(is-a %3ASYSTEM-CLASS)
+	(role concrete)
+	(single-slot %3ASTARTUP-FILE
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot %3ASTARTUP-EXPRESSION
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass %3AJESS-DEFINITION
+	(is-a %3ASYSTEM-CLASS)
+	(role abstract)
+	(single-slot %3ADEFINITION-NAME
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot %3AKB-SAVE
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+		(default FALSE)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot %3ADEFINITION
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass %3AJESS-DEFGLOBAL
+	(is-a %3AJESS-DEFINITION)
+	(role concrete))
+
+(defclass %3AJESS-DEFTEMPLATE
+	(is-a %3AJESS-DEFINITION)
+	(role concrete)
+	(multislot %3ADOCUMENTATION
+		(type STRING)
+		(create-accessor read-write)))
+
+(defclass %3AJESS-DEFFACTS
+	(is-a %3AJESS-DEFINITION)
+	(role concrete)
+	(multislot %3ADOCUMENTATION
+		(type STRING)
+		(create-accessor read-write)))
+
+(defclass %3AJESS-DEFMESSAGE-HANDLER
+	(is-a %3AJESS-DEFINITION)
+	(role concrete)
+	(multislot %3ADOCUMENTATION
+		(type STRING)
+		(create-accessor read-write)))
+
+(defclass %3AJESS-DEFMETHOD
+	(is-a %3AJESS-DEFINITION)
+	(role concrete)
+	(multislot %3ADOCUMENTATION
+		(type STRING)
+		(create-accessor read-write)))
+
+(defclass %3ARULE
+	(is-a %3ASYSTEM-CLASS)
+	(role abstract)
+	(single-slot %3ADEFINITION-NAME
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot %3ADEFINITION
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass %3AJESS-RULE
+	(is-a %3AJESS-DEFINITION %3ARULE)
+	(role concrete)
+	(multislot %3ADOCUMENTATION
+		(type STRING)
+		(create-accessor read-write)))
+
+(defclass %3AFUNCTION
+	(is-a %3ASYSTEM-CLASS)
+	(role abstract)
+	(single-slot %3ADEFINITION-NAME
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot %3ADEFINITION
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass %3AJESS-FUNCTION
+	(is-a %3AFUNCTION %3AJESS-DEFINITION)
+	(role concrete)
+	(multislot %3ADOCUMENTATION
+		(type STRING)
+		(create-accessor read-write)))
+
+(defclass Alimento
+	(is-a USER)
+	(role concrete)
+	(multislot recomendado
+		(type SYMBOL)
+		(allowed-values ri%C3%B1%C3%B3n coraz%C3%B3n diabetes cel%C3%ADacos)
+		(create-accessor read-write))
+	(single-slot proteinas
+		(type FLOAT)
+		(range 0.0 %3FVARIABLE)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot calorias
+		(type FLOAT)
+		(range 0.0 %3FVARIABLE)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot origen
+		(type SYMBOL)
+		(allowed-values animal vegetal)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot prohibido
+		(type SYMBOL)
+		(allowed-values ri%C3%B1%C3%B3n coraz%C3%B3n diabetes cel%C3%ADacos)
+		(create-accessor read-write))
+	(single-slot hidratos
+		(type FLOAT)
+		(range 0.0 %3FVARIABLE)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot nombre
+		(type STRING)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot grasas
+		(type FLOAT)
+		(range 0.0 %3FVARIABLE)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass Persona
+	(is-a USER)
+	(role concrete)
+	(multislot odiaP
+		(type INSTANCE)
+;+		(allowed-classes Alimento)
+		(create-accessor read-write))
+	(single-slot pesoP
+		(type INTEGER)
+		(range 40 200)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot grasasP
+		(type INTEGER)
+		(default 0)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot proteinasP
+		(type INTEGER)
+		(default 0)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot hidratosP
+		(type INTEGER)
+		(default 0)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot nombreP
+		(type STRING)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot kcalP
+		(type INTEGER)
+		(default 0)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot vegetarianoP
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+		(default FALSE)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot edadP
+		(type INTEGER)
+		(range 18 30)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(multislot enfermedadP
+		(type SYMBOL)
+		(allowed-values ri%C3%B1%C3%B3n coraz%C3%B3n diabetes cel%C3%ADacos)
+		(create-accessor read-write))
+	(single-slot sexoP
+		(type SYMBOL)
+		(allowed-values f m)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot estaturaP
+		(type INTEGER)
+		(range 140 250)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot actividadP
+		(type INTEGER)
+		(range 1 5)
+;+		(cardinality 1 1)
+		(create-accessor read-write)))
+
+(defclass Plato
+	(is-a USER)
+	(role concrete)
+	(single-slot kcalPlato
+		(type INTEGER)
+		(default 0)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot meriendaPlato
+		(type SYMBOL)
+		(allowed-values y n)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot cenaPlato
+		(type SYMBOL)
+		(allowed-values y n)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot hidratosPlato
+		(type FLOAT)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(multislot receta
+		(type INSTANCE)
+;+		(allowed-classes Cantidad)
+		(create-accessor read-write))
+	(multislot ingredientesPlato
+		(type INSTANCE)
+;+		(allowed-classes Alimento)
+		(create-accessor read-write))
+	(multislot nombreIngredientesPlato
+		(type STRING)
+		(create-accessor read-write))
+	(single-slot nombrePlato
+		(type STRING)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot desayunoPlato
+		(type SYMBOL)
+		(allowed-values y n)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot tipoPlato
+		(type SYMBOL)
+		(allowed-values primero segundo extra bebida postre)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot comidaPlato
+		(type SYMBOL)
+		(allowed-values y n)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot proteinasPlato
+		(type FLOAT)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot grasasPlato
+		(type FLOAT)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass Desayuno
+	(is-a USER)
+	(role concrete)
+	(single-slot personaDesayuno
+		(type STRING)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot usadoDesayuno
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+		(default FALSE)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot primeroDesayuno
+		(type INSTANCE)
+;+		(allowed-classes Plato)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot segundoDesayuno
+		(type INSTANCE)
+;+		(allowed-classes Plato)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot nombrePrimeroDesayuno
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot nombreSegundoDesayuno
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass Comida
+	(is-a USER)
+	(role concrete)
+	(single-slot nombreSegundoComida
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot personaComida
+		(type STRING)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot primeroComida
+		(type INSTANCE)
+;+		(allowed-classes Plato)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot postreComida
+		(type INSTANCE)
+;+		(allowed-classes Plato)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot segundoComida
+		(type INSTANCE)
+;+		(allowed-classes Plato)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot usadoComida
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+		(default FALSE)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot nombrePrimeroComida
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot nombrePostreComida
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass Merienda
+	(is-a USER)
+	(role concrete)
+	(single-slot usadoMerienda
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+		(default FALSE)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot personaMerienda
+		(type STRING)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot primeroMerienda
+		(type INSTANCE)
+;+		(allowed-classes Plato)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot nombrePrimeroMerienda
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass Cena
+	(is-a USER)
+	(role concrete)
+	(single-slot personaCena
+		(type STRING)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot primeroCena
+		(type INSTANCE)
+;+		(allowed-classes Plato)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot postreCena
+		(type INSTANCE)
+;+		(allowed-classes Plato)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot nombrePostreCena
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot segundoCena
+		(type INSTANCE)
+;+		(allowed-classes Plato)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot nombrePrimeroCena
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot usadoCena
+		(type SYMBOL)
+		(allowed-values FALSE TRUE)
+		(default FALSE)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot nombreSegundoCena
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass Dia
+	(is-a USER)
+	(role concrete)
+	(single-slot meriendaDia
+		(type INSTANCE)
+;+		(allowed-classes Merienda)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot desayunoDia
+		(type INSTANCE)
+;+		(allowed-classes Desayuno)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot comidaDia
+		(type INSTANCE)
+;+		(allowed-classes Comida)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot personaDia
+		(type STRING)
+;+		(cardinality 0 1)
+		(create-accessor read-write))
+	(single-slot cenaDia
+		(type INSTANCE)
+;+		(allowed-classes Cena)
+;+		(cardinality 0 1)
+		(create-accessor read-write)))
+
+(defclass Cantidad
+	(is-a USER)
+	(role concrete)
+	(single-slot gramos
+		(type INTEGER)
+		(range 1 %3FVARIABLE)
+;+		(cardinality 1 1)
+		(create-accessor read-write))
+	(single-slot ingrediente
+		(type INSTANCE)
+;+		(allowed-classes Alimento)
+;+		(cardinality 1 1)
+		(create-accessor read-write)))
